@@ -1,0 +1,41 @@
+[project]
+name = "swversion"
+version = "0.0.1"
+authors = [{ name="Vladimir Prusakov", email="vladimir.prusakovs@gmail.com" }]
+description = "Compare software version for network devices: Cisco, HP, etc."
+readme = "README.rst"
+license = { text="MIT" }
+requires-python = ">=3.8"
+keywords = ["cisco", "ios", "networking", "telecommunication"]
+classifiers = [
+     "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Telecommunications Industry",
+    # "Operating System :: Cisco IOS",
+    # "Operating System :: Cisco NX-OS",
+    "Topic :: System :: Networking",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Natural Language :: English",
+]
+[project.urls]
+"Homepage" = "https://github.com/vladimirs-git/swversion"
+"Repository" = "https://github.com/vladimirs-git/swversion"
+"Bug Tracker" = "https://github.com/vladimirs-git/swversion/issues"
+"Download URL" = "https://github.com/vladimirs-git/swversion/archive/refs/tags/0.0.1.tar.gz"
+[tool.setuptools.packages.find]
+include = ["swversion"]
+[tool.setuptools.package-data]
+swversion = ["py.typed"]
+[project.optional-dependencies]
+dev = [
+    "dictdiffer ~= 0.9",
+    "mypy < 1",
+    "pylint == 2.13.9",
+    "pytest ~= 7.2",
+    "restructuredtext-lint ~= 1.4",
+    "twine ~= 4.0",
+]
