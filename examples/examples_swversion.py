@@ -11,8 +11,8 @@ version2 = SwVersion("15.2(4)E11")
 
 assert version1 < version2
 assert version1 <= version2
-assert version2 > version1
-assert version2 >= version1
+assert not version1 > version2
+assert not version1 >= version2
 print(version1)
 print(version2)
 # 15.2(4)e10
